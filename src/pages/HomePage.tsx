@@ -18,7 +18,7 @@ export default function HomePage() {
         style={{ height: hp(80), width: wp(50), borderBottomRightRadius: 100 }}
       ></div>
       <div className={`py-8 pb-16 relative`}>
-        <div className={theme.layout.container} style={{ marginTop: -55 }}>
+        <div className={theme.layout.container} style={{ marginTop: -45 }}>
           <div
             className={`${theme.text.secondary} ${theme.font.heading} flex mr-150`}
           >
@@ -37,11 +37,11 @@ export default function HomePage() {
               EVENTS
             </a>
             <a href="#" className={theme.text.primary}>
-              DASHBOARD
+              WEB DASHBOARD
             </a>
           </nav>
         </div>
-        <div className={`${theme.layout.section} mt-8`}>
+        <div className={`${theme.layout.section} mt-18`}>
           <div className="flex-1">
             <h2 className={`${theme.font.heading} text-2xl text-[#FB26FF]`}>
               DISCOVER
@@ -61,8 +61,8 @@ export default function HomePage() {
               <button className={theme.button.secondary}>App Store</button>
             </div>
           </div>
-          <div className="absolute gap-4 left-160 top-10">
-            <img src={group2382} alt="Discover" className="size-92" />
+          <div className="absolute gap-4 left-145 top-1">
+            <img src={group2382} alt="Discover" className="size-100" />
           </div>
         </div>
       </div>
