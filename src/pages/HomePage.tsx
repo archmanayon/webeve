@@ -1,3 +1,4 @@
+import { he } from '@faker-js/faker'
 import group2392 from '../assets/images/create/Group 2392.png'
 import group2382 from '../assets/images/discover/Group 2382.png'
 import inside01 from "../assets/images/what's_inside/inside 01.png"
@@ -5,7 +6,6 @@ import inside02 from "../assets/images/what's_inside/inside 02.png"
 import inside03 from "../assets/images/what's_inside/inside 03.png"
 import eveLogo from '../assets/images/eveLogo.png'
 import { theme } from '../styles/theme'
-import { he } from '@faker-js/faker'
 import { hp, wp } from '@/lib/helpers'
 
 export default function HomePage() {
