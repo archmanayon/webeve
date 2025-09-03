@@ -17,7 +17,7 @@ export default function HomePage() {
         style={{ height: hp(80), width: wp(45), borderBottomRightRadius: 100 }}
       ></div>
       <div className={`relative `}>
-        <div className={`${theme.layout.container} bg-green-600`}>
+        <div className={`${theme.layout.container} `}>
           <div
             className={`${theme.text.secondary} ${theme.font.heading} ${theme.layout.mr}`}
           >
@@ -28,7 +28,7 @@ export default function HomePage() {
               style={{ height: hp(6) }}
             />
           </div>
-          <nav className={`bg-pink-400 flex gap-20`}>
+          <nav className={`flex gap-20`}>
             <a href="#" className={`${theme.text.primary} font-semibold`}>
               HOME
             </a>
@@ -62,7 +62,7 @@ export default function HomePage() {
               <button className={theme.button.secondary}>App Store</button>
             </div>
           </div>
-          <div className="bg-red-500">
+          <div className="">
             <img src={group2382} alt="Discover" className="size-100" />
           </div>
         </div>
