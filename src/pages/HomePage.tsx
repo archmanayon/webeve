@@ -1,12 +1,11 @@
+import { hp, wp } from '@/lib/helpers'
 import group2392 from '../assets/images/create/Group 2392.png'
 import group2382 from '../assets/images/discover/Group 2382.png'
+import eveLogo from '../assets/images/eveLogo.png'
 import inside01 from "../assets/images/what's_inside/inside 01.png"
 import inside02 from "../assets/images/what's_inside/inside 02.png"
 import inside03 from "../assets/images/what's_inside/inside 03.png"
-import eveLogo from '../assets/images/eveLogo.png'
 import { theme } from '../styles/theme'
-import { he } from '@faker-js/faker'
-import { hp, wp } from '@/lib/helpers'
 
 export default function HomePage() {
   return (
@@ -15,12 +14,12 @@ export default function HomePage() {
       <div
         // className={` bg-green-600 absolute top-0 left-0 w-lg rounded-br-4xl h-50`}  style={{ height: hp(40), width: wp(65) }}
         className={`${theme.bg.gradient} absolute top-0 left-0 `}
-        style={{ height: hp(80), width: wp(50), borderBottomRightRadius: 100 }}
+        style={{ height: hp(80), width: wp(45), borderBottomRightRadius: 100 }}
       ></div>
-      <div className={`py-8 pb-16 relative`}>
-        <div className={theme.layout.container} style={{ marginTop: -55 }}>
+      <div className={`relative `}>
+        <div className={`${theme.layout.container} bg-green-600`}>
           <div
-            className={`${theme.text.secondary} ${theme.font.heading} flex mr-150`}
+            className={`${theme.text.secondary} ${theme.font.heading} ${theme.layout.mr}`}
           >
             <img
               src={eveLogo}
@@ -29,7 +28,7 @@ export default function HomePage() {
               style={{ height: hp(6) }}
             />
           </div>
-          <nav className={` flex gap-20`}>
+          <nav className={`bg-pink-400 flex gap-20`}>
             <a href="#" className={`${theme.text.primary} font-semibold`}>
               HOME
             </a>
@@ -37,13 +36,15 @@ export default function HomePage() {
               EVENTS
             </a>
             <a href="#" className={theme.text.primary}>
-              DASHBOARD
+              WEB DASHBOARD
             </a>
           </nav>
         </div>
-        <div className={`${theme.layout.section} mt-8`}>
-          <div className="flex-1">
-            <h2 className={`${theme.font.heading} text-2xl text-[#FB26FF]`}>
+        <div className={`${theme.layout.section} gap-30`}>
+          <div>
+            <h2
+              className={`${theme.font.heading} text-[#FB26FF] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl`}
+            >
               DISCOVER
             </h2>
             <h3
@@ -61,8 +62,8 @@ export default function HomePage() {
               <button className={theme.button.secondary}>App Store</button>
             </div>
           </div>
-          <div className="absolute gap-4 left-160 top-10">
-            <img src={group2382} alt="Discover" className="size-92" />
+          <div className="bg-red-500">
+            <img src={group2382} alt="Discover" className="size-100" />
           </div>
         </div>
       </div>

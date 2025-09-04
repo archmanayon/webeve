@@ -50,9 +50,11 @@ export const theme = {
     secondary: 'bg-white text-violet-600 rounded-lg px-6 py-2 font-semibold',
   },
   layout: {
-    container: 'max-w-6xl mx-auto flex items-center px-8',
+    container: 'mx-auto flex items-center px-8',
     semi_container: 'max-w-6xl mx-auto flex justify-between items-center px-8',
-    section: 'max-w-6xl mx-auto flex items-center justify-between px-8',
+    discover_container:
+      'max-w-6xl mx-auto flex justify-between items-center px-8',
+    section: 'max-w-6xl mx-auto flex items-center',
     center: 'flex justify-center items-center',
     gap: {
       sm: 'gap-4',
@@ -68,6 +70,7 @@ export const theme = {
       sm: 'px-4',
       md: 'px-8',
     },
+    mr: 'flex md:mr-150 xl:mr-200',
   },
   shadow: {
     card: 'shadow-md',
